@@ -9,7 +9,7 @@ namespace Job.Controllers
     [HttpGet("/jobs")]
     public ActionResult Index()
     {
-      List<Job> allJobs = Job.GetAll();
+      List<Jobs> allJobs = Jobs.GetAll();
       return View(allJobs);
     }
 
@@ -22,7 +22,7 @@ namespace Job.Controllers
     [HttpPost("/jobs")]
     public ActionResult Create(string title, string description, string contact)
     {
-      Job myJob = new Job(title, description, contact);
+      Jobs myJob = new Jobs(title, description, contact);
       return RedirectToAction("Index");
     }
   }
