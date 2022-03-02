@@ -2,18 +2,19 @@ using System.Collections.Generic;
 
 namespace Job.Models
 {
-  public class Jobs
+  public class Jobs : Contact
   {
+    // Contact Contact = new Contact();
     public string Title { get; set; }
     public string Description { get; set; }
-    public string Contact { get; set; }
+    public Contact Contact { get; set; }
     private static List<Jobs> _avaliable = new List<Jobs> {};
 
-    public Jobs(string title, string description, string contact)
+    public Jobs(string title, string description, Contact contact)
     {
       Title = title;
       Description = description;
-      Contact = contact;
+      Contact = new Contact();
       _avaliable.Add(this);
     }
 
@@ -22,5 +23,18 @@ namespace Job.Models
       return _avaliable;
     }
 
+  }
+  public class Contact
+  {
+    public string Email { get; set; }
+    public string Name { get; set; }
+    public int Number { get; set; }
+
+    // public Contact(string email, string name, int number)
+    // {
+    //   Email = email;
+    //   Name = name;
+    //   Number = number;
+    // }
   }
 }

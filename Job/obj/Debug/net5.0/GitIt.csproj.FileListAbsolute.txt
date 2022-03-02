@@ -32,3 +32,4 @@ C:\Users\ultra\desktop\GitAJob\Job\obj\Debug\net5.0\GitIt.genruntimeconfig.cache
 C:\Users\ultra\desktop\GitAJob\Job\obj\Debug\net5.0\GitIt.csproj.CopyComplete
 C:\Users\ultra\desktop\GitAJob\Job\obj\Debug\net5.0\Razor\Views\Job\CreateForm.cshtml.g.cs
 C:\Users\ultra\desktop\GitAJob\Job\obj\Debug\net5.0\Razor\Views\Job\Index.cshtml.g.cs
+C:\Users\ultra\desktop\GitAJob\Job\obj\Debug\net5.0\Razor\Views\Items\Index.cshtml.g.cs
